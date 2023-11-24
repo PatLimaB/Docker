@@ -1,12 +1,12 @@
 
-FROM
+FROM python:latest
 
 WORKDIR /app
 
-COPY 
+COPY /app
 
-RUN 
+RUN pip3 install flask
 
-EXPOSE 
+EXPOSE 5000
 
-CMD 
+CMD [ "python", "./app.py" ]
