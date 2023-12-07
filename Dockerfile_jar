@@ -1,9 +1,9 @@
-#A COMPLETAR!
-FROM 
-LABEL 
+FROM openjdk:20
+
+LABEL maintainer="plimab01@iesalbarregas.es"
 
 WORKDIR /app
 
-COPY 
+COPY juego.jar /app/juego.jar
 
-CMD 
+CMD ["java", "-jar", "juego.jar"]
