@@ -1,10 +1,8 @@
-# A COMPLETAR!!!
+FROM tomcat:latest
+LABEL maintainer="plimab01@iesalbarregas.es"
 
-FROM 
-LABEL
+ADD sample.war /usr/local/tomcat/webapps/
 
-ADD 
+EXPOSE 8080
 
-EXPOSE 
-
-CMD 
+CMD ["catalina.sh", "run"]
